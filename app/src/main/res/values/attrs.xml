@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="DrawableRightEditText">
+        <attr name="showRightDrawable" format="boolean"/>
+    </declare-styleable>
+</resources>
