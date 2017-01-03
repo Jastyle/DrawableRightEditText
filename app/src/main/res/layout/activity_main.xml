@@ -29,4 +29,13 @@
         app:showRightDrawable="false"
         android:drawableRight="@mipmap/icon_cancel"
         android:hint="Hello World!" />
+    <com.apixserver.drawablerightedittext.DrawableRightEditText
+        android:id="@+id/editable_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:drawableRight="@mipmap/icon_edit"
+        android:hint="Hello World!"
+        app:showRightDrawable="true"/>
 </LinearLayout>
