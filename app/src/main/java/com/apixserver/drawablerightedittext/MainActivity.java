@@ -58,10 +58,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClickDrawRight(EditText editText) {
                 if (pswdstatus) {//可见时
+                    rightEditText_pswd.setDrawable(getResources().getDrawable(R.mipmap.icon_showpswd));
                     rightEditText_pswd.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD|InputType.TYPE_CLASS_TEXT);
                     rightEditText_pswd.setSelection(rightEditText_pswd.getText().toString().trim().length());
                     pswdstatus = false;
                 }else {
+                    rightEditText_pswd.setDrawable(getResources().getDrawable(R.mipmap.icon_nopswd));
                     rightEditText_pswd.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
                     rightEditText_pswd.setSelection(rightEditText_pswd.getText().toString().trim().length());
                     pswdstatus = true;
